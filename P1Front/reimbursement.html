@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Reimbursement System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" id="fullcontainer">
+        <div class="row" id="user-row">
+            <br>
+            <br>
+            <h3 class="col-lg-12">=== WELCOME ===</h3>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>View Submitted Reimbursements</h3>
+    <br>
+    <div class="row" id="table-row">
+        <table class="table-hover table-bordered" id="reimbtable">
+            <thead>
+                <tr>
+                    <th>Reimbursement ID</th>
+                    <th>Amount</th>
+                    <th>Submit Time</th>
+                    <th>Resolve Time</th>
+                    <th>Submitted By</th>
+                    <th>Resolved By</th>
+                    <th>Status</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody id="reimbbody">
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3>Submit a New Reimbursement</h3>
+    <br>
+
+    <div class="row" id="formdiv">
+        <div class="sm-col-1">
+            <label class="label" for="amount">Amount</label>
+            <input type="number" class="form-control" id="amount" placeholder="enter amount">
+        </div>
+        <div class="col-sm-1.5">
+            <label class="label" for="submit">Submit Time</label>
+            <span type="text" class="form-control" id="submit"></span>
+            <script>
+                var dt = new Date();
+                document.getElementById("submit").innerHTML = dt.toLocaleString();
+            </script>
+        </div>
+        <div class="col-sm-1.5 ">
+            <label class=" label " for="resolve ">Resolve Time</label>
+            <text type="date" class="form-control " id="resolve ">(NULL)</text>
+        </div>
+        <div class="col-sm-2 ">
+            <label class="label " for="desciption ">Description</label>
+            <input type="text" class="form-control " id="description ">
+        </div>
+        <div class="col-4-sm ">
+            <label class="label " for="author ">Submitted By</label>
+            <input type="text " class="form-control " id="author " placeholder="enter your username ">
+        </div>
+        <div class="col-4-sm ">
+            <label class="label " for="resolver ">Resolved By</label>
+            <text type="text " class="form-control " id="resolver "> (NULL) </text>
+        </div>
+        <div class="col-sm-1 ">
+            <label class="label " for="status ">Status</label>
+            <text type="text " class="form-control " id="status ">(PENDING)</text>
+        </div>
+        <div class="col-sm-2 ">
+            <label class="label " for="type ">Type</label>
+            <input type="text " class="form-control " id="type " placeholder="LODGIN/TRAVEL/FOOD/OTHER ">
+        </div>
+    </div>
+    <div class="row " id="formbtn "></div>
+
+
+
+
+    <script src="Login.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js " integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf " crossorigin="anonymous "></script>
+</body>
+
+</html>

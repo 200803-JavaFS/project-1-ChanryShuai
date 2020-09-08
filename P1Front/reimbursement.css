@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(217, 229, 182);
+    background-repeat: repeat;
+    background-size: cover;
+    background-blend-mode: darken 80%;
+}
+
+h2 {
+    margin-top: 15vh;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+    text-decoration: overline;
+    width: 100%;
+}
+
+table {
+    background-color: #ebe4bc;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 50px, 50px, 50px, 50px;
+    border-radius: 50px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.formdiv {
+    margin-left: 50px;
+}
+
+#table-row {
+    border-radius: 25px;
+    background-color: rgba(175, 212, 197, 0.6);
+    /* background-color: rgba(236, 201, 155, 0.5);*/
+    width: 80vw;
+    margin-top: 5vh;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
+}
+
+#formdiv {
+    border-radius: 25px;
+    background-color: rgba(175, 212, 197, 0.6);
+    /* background-color: rgba(236, 201, 155, 0.5);*/
+    width: 80vw;
+    margin-top: 5vh;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30vh;
+    text-align: center;
+}
+
+#rowtale #reimbtable {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 80vw;
+}
+
+.label {
+    background-color: rgb(235, 228, 188)
+}

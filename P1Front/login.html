@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Reimbursement System</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="reimbursement.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+    <h1> • ERS • ACCOUNT • LOGIN • </h1>
+
+    <form>
+
+        <div class="container1" method="POST">
+            <div class="logrow" id="login-row">
+                <input class="loginput" id="username" type="text" placeholder="Enter • Your • Username " required>
+                <input class="loginput" type="password" id="password" placeholder="Enter • Your • Password " required>
+                <button class="logbtn" id="loginbtn">LOGIN</button>
+            </div>
+        </div>
+
+        <br>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row" id="table-row">
+            <br>
+            <h2>View Submitted Reimbursements</h2>
+            <br>
+
+            <table class="table-bordered" id="reimbtable" style="font:20px Times New Roman;">
+                <thead>
+                    <tr style="text-align:center">
+                        <th>Reimbursement ID</th>
+                        <th>Amount</th>
+                        <th>Submit Time</th>
+                        <th>Resolve Time</th>
+                        <th>Submitted By</th>
+                        <th>Resolved By</th>
+                        <th>Status</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody id="reimbbody">
+                </tbody>
+            </table>
+
+        </div>
+        <div id="selectone"></div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <br>
+
+        <div id="formdiv" style="align-content: center;">
+            <div>
+                <h2>Submit a New Reimbursement</h2>
+            </div>
+
+            <br>
+            <div class="row" id="rowtable" style="font:20px Times New Roman;font-weight:bolder; padding:30px; 
+           border-radius: 5px; background-color:rgb(235, 228, 188);">
+                <div class="sm-col-1">
+                    <label class="label" for="amount">Amount</label>
+                    <input type="number" class="form-control" id="amount" placeholder="enter amount">
+                </div>
+                <div class="col-sm-1.5">
+                    <label class="label" for="submit">Submit Time</label>
+                    <span type="text" class="form-control" id="submit">current time</span>
+                    <script>
+                        var dt = new Date();
+                        document.getElementById("submit").innerHTML = dt.toLocaleString();
+                    </script>
+                </div>
+                <div class="col-sm-1.5 ">
+                    <label class="label " for="resolve ">Resolve Time</label>
+                    <text type="date" class="form-control " id="resolve ">(NULL)</text>
+                </div>
+                <div class="col-sm-2 ">
+                    <label class="label " for="desciption ">Description</label>
+                    <input type="text" class="form-control " id="description ">
+                </div>
+                <div class="col-4-sm ">
+                    <label class="label " for="author ">Submitted By</label>
+                    <input type="text " class="form-control " id="author " placeholder="enter your username ">
+                </div>
+                <div class="col-4-sm ">
+                    <label class="label " for="resolver ">Resolved By</label>
+                    <text type="text " class="form-control " id="resolver "> (NULL) </text>
+                </div>
+                <div class="col-sm-1 ">
+                    <label class="label " for="status ">Status</label>
+                    <text type="text " class="form-control " id="status ">(PENDING)</text>
+                </div>
+                <div class="col-sm-2 ">
+                    <label class="label " for="type ">Type</label>
+                    <input type="text " class="form-control " id="type " placeholder="LODGIN/TRAVEL/FOOD/OTHER ">
+                </div>
+            </div>
+        </div>
+        <div class="row " id="formbtn "></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div id="formdiv" style="align-content: center;">
+            <div>
+                <h2>Change Reimbursement Status</h2>
+            </div>
+            <table class="table-bordered" id="reimbtable" style="font:20px Times New Roman;">
+                <thead>
+                    <tr style="text-align:center">
+                        <th>Reimbursement ID</th>
+                        <th>Amount</th>
+                        <th>Submit Time</th>
+                        <th>Resolve Time</th>
+                        <th>Submitted By</th>
+                        <th>Resolved By</th>
+                        <th>Status</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody id="onebody">
+                </tbody>
+                <div id="changestatus" class="col-sm-2 ">
+                    <label class="label " for="newstatus">Change Status To:</label>
+                </div>
+        </div>
+        </div>
+        <div class="row " id="formbtn "></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </form>
+    <script src="Login.js"></script>
+</body>
+
+</html>
